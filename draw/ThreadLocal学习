@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-06-04T14:50:37.381Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="eQGdySSsIMJvIJUi2Jks" version="13.1.14" type="github">
+<mxfile host="app.diagrams.net" modified="2020-06-04T14:54:48.954Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="tE7Liq-79Tn2SwZFW-qI" version="13.1.14" type="github">
   <diagram id="dSj7Js1JZH0rCM6K09V2" name="第 1 页">
-    <mxGraphModel dx="1221" dy="1917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#CCFFCC" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="1805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#CCFFCC" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -226,22 +226,37 @@
         </mxCell>
         <mxCell id="teeQK1nBKbQHBKOdsNSn-140" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="teeQK1nBKbQHBKOdsNSn-134">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="951.0588235294117" y="500" as="targetPoint" />
+            <mxPoint x="921.0588235294117" y="502" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="teeQK1nBKbQHBKOdsNSn-134" value="&lt;pre style=&quot;text-align: left ; background-color: rgb(255 , 255 , 255) ; color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34;&quot;&gt;&lt;span style=&quot;color: rgb(0 , 51 , 179)&quot;&gt;int &lt;/span&gt;i = key.&lt;span style=&quot;color: rgb(135 , 16 , 148)&quot;&gt;threadLocalHashCode &lt;/span&gt;&amp;amp; (&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;len&lt;/span&gt;-&lt;span style=&quot;color: rgb(23 , 80 , 235)&quot;&gt;1&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;align=center;" vertex="1" parent="1">
-          <mxGeometry x="901" y="425" width="100" height="40" as="geometry" />
+          <mxGeometry x="871" y="427" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="teeQK1nBKbQHBKOdsNSn-138" value="i" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="440" y="460" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="teeQK1nBKbQHBKOdsNSn-143" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="teeQK1nBKbQHBKOdsNSn-141">
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-143" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="teeQK1nBKbQHBKOdsNSn-141" target="teeQK1nBKbQHBKOdsNSn-146">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="953" y="625" as="targetPoint" />
+            <mxPoint x="923" y="627" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="teeQK1nBKbQHBKOdsNSn-141" value="【i】位置的key == threadLocal" style="rhombus;whiteSpace=wrap;html=1;fontSize=8;align=center;" vertex="1" parent="1">
-          <mxGeometry x="870" y="500" width="166" height="80" as="geometry" />
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-153" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="teeQK1nBKbQHBKOdsNSn-141" target="teeQK1nBKbQHBKOdsNSn-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-141" value="【i】位置entry == null" style="rhombus;whiteSpace=wrap;html=1;fontSize=8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="502" width="166" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-152" value="【i】位置key == null" style="rhombus;whiteSpace=wrap;html=1;fontSize=8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="602" width="166" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-148" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="teeQK1nBKbQHBKOdsNSn-146" target="teeQK1nBKbQHBKOdsNSn-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-146" value="&lt;pre style=&quot;text-align: left ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;jetbrains mono&amp;#34;&quot;&gt;&lt;font color=&quot;#0033b3&quot;&gt;直接new entry 填充&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="873" y="622" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-147" value="&lt;pre style=&quot;text-align: left ; background-color: rgb(255 , 255 , 255) ; color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34;&quot;&gt;&lt;span style=&quot;color: rgb(0 , 51 , 179)&quot;&gt;int &lt;/span&gt;i = key.&lt;span style=&quot;color: rgb(135 , 16 , 148)&quot;&gt;threadLocalHashCode &lt;/span&gt;&amp;amp; (&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;len&lt;/span&gt;-&lt;span style=&quot;color: rgb(23 , 80 , 235)&quot;&gt;1&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="873" y="702" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
