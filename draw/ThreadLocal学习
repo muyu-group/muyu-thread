@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-06-04T14:44:11.987Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="mD5zErd4gGIYnghCkyJI" version="13.1.14" type="github">
+<mxfile host="app.diagrams.net" modified="2020-06-04T14:47:03.084Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="nFP_6Ske02Go1qxxUg06" version="13.1.14" type="github">
   <diagram id="dSj7Js1JZH0rCM6K09V2" name="第 1 页">
-    <mxGraphModel dx="1038" dy="1805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#CCFFCC" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="1917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#CCFFCC" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -214,6 +214,24 @@
         </mxCell>
         <mxCell id="teeQK1nBKbQHBKOdsNSn-89" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;jetbrains mono&amp;quot;; font-size: 8px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 51, 179); font-size: 8px;&quot;&gt;int &lt;/span&gt;i = key.&lt;span style=&quot;color: rgb(135, 16, 148); font-size: 8px;&quot;&gt;threadLocalHashCode &lt;/span&gt;&amp;amp; (&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 8px;&quot;&gt;len&lt;/span&gt;-&lt;span style=&quot;color: rgb(23, 80, 235); font-size: 8px;&quot;&gt;1&lt;/span&gt;);&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
           <mxGeometry x="110" y="450" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-130" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 12.0pt&quot;&gt;&lt;span style=&quot;color: #0033b3&quot;&gt;for &lt;/span&gt;(&lt;span style=&quot;color: #000000&quot;&gt;Entry &lt;/span&gt;e = &lt;span style=&quot;color: #000000&quot;&gt;tab&lt;/span&gt;[i];&lt;br&gt;     e != &lt;span style=&quot;color: #0033b3&quot;&gt;null&lt;/span&gt;;&lt;br&gt;     e = &lt;span style=&quot;color: #000000&quot;&gt;tab&lt;/span&gt;[i = &lt;span style=&quot;font-style: italic&quot;&gt;nextIndex&lt;/span&gt;(i, &lt;span style=&quot;color: #000000&quot;&gt;len&lt;/span&gt;)]) {&lt;br&gt;    &lt;span style=&quot;color: #000000&quot;&gt;ThreadLocal&lt;/span&gt;&amp;lt;?&amp;gt; &lt;span style=&quot;color: #000000&quot;&gt;k &lt;/span&gt;= e.get();&lt;br&gt;&lt;br&gt;    &lt;span style=&quot;color: #0033b3&quot;&gt;if &lt;/span&gt;(&lt;span style=&quot;color: #000000&quot;&gt;k &lt;/span&gt;== key) {&lt;br&gt;        e.&lt;span style=&quot;color: #871094&quot;&gt;value &lt;/span&gt;= value;&lt;br&gt;        &lt;span style=&quot;color: #0033b3&quot;&gt;return&lt;/span&gt;;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;    &lt;span style=&quot;color: #0033b3&quot;&gt;if &lt;/span&gt;(&lt;span style=&quot;color: #000000&quot;&gt;k &lt;/span&gt;== &lt;span style=&quot;color: #0033b3&quot;&gt;null&lt;/span&gt;) {&lt;br&gt;        replaceStaleEntry(key, value, i);&lt;br&gt;        &lt;span style=&quot;color: #0033b3&quot;&gt;return&lt;/span&gt;;&lt;br&gt;    }&lt;br&gt;}&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: #000000&quot;&gt;tab&lt;/span&gt;[i] = &lt;span style=&quot;color: #0033b3&quot;&gt;new &lt;/span&gt;Entry(key, value);&lt;br&gt;&lt;span style=&quot;color: #0033b3&quot;&gt;int &lt;/span&gt;&lt;span style=&quot;color: #000000&quot;&gt;sz &lt;/span&gt;= ++&lt;span style=&quot;color: #871094&quot;&gt;size&lt;/span&gt;;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="550" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-133" value="" style="endArrow=classic;html=1;fontSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1278" y="550" as="sourcePoint" />
+            <mxPoint x="1203" y="550.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-134" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="966" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-135" value="这里有四种情况" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="854" y="390" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="teeQK1nBKbQHBKOdsNSn-138" value="i" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="440" y="460" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
